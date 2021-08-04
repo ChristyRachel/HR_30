@@ -21,6 +21,7 @@ int main() {
 
 	string a_temp_temp;
 	getline(cin, a_temp_temp);
+	int numberOfSwaps = 0;
 
 	vector<string> a_temp = split(rtrim(a_temp_temp));
 
@@ -36,8 +37,6 @@ int main() {
 
 	for (int i = 0; i < n; i++) {
 		// Track number of elements swapped during a single array traversal
-		int numberOfSwaps = 0;
-
 		for (int j = 0; j < n - 1; j++) {
 			// Swap adjacent elements if they are in decreasing order
 			if (a[j] > a[j + 1]) {
